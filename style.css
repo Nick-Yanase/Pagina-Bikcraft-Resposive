@@ -169,37 +169,44 @@ p {
   .conteudo {
     grid-template-columns: 1fr;
   }
-  body{
+  body {
     gap: 30px;
     margin-top: 30px;
   }
 
-  .introducao::before{
+  .introducao::before {
     display: none;
   }
-  
+
   .introducao {
     text-align: left;
     justify-items: start;
   }
 
-  .subtitulo{
+  .subtitulo {
     font-size: 3rem;
   }
 }
 
-@media (max-width: 400px){
-  .subtitulo{
+@media (max-width: 400px) {
+  .subtitulo {
     font-size: 3rem;
   }
-  p{
+  p {
     font-size: 1rem;
   }
   .introducao h1 {
     font-size: 1.5rem;
   }
 
-  li h3{
+  li h3 {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 250px) {
+  .introducao-cover img {
+    width: 100%;
+    max-width: 250px;
   }
 }
